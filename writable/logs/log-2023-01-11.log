@@ -1,0 +1,700 @@
+CRITICAL - 2023-01-11 16:31:23 --> Undefined variable: session
+in APPPATH\Views\auth\login.php on line 27.
+ 1 APPPATH\Views\auth\login.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\auth\\login.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('auth/login', [], true)
+ 5 APPPATH\Controllers\Admin\Auth.php(36): view('auth/login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 16:31:38 --> Undefined variable: validation
+in APPPATH\Views\auth\login.php on line 47.
+ 1 APPPATH\Views\auth\login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\auth\\login.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('auth/login', [], true)
+ 5 APPPATH\Controllers\Admin\Auth.php(36): view('auth/login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 16:31:39 --> Undefined variable: validation
+in APPPATH\Views\auth\login.php on line 47.
+ 1 APPPATH\Views\auth\login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\auth\\login.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\auth\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('auth/login', [], true)
+ 5 APPPATH\Controllers\Admin\Auth.php(36): view('auth/login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 16:51:53 --> Undefined property: App\Controllers\Customer\Katalog::$input
+in APPPATH\Controllers\Customer\Katalog.php on line 23.
+ 1 APPPATH\Controllers\Customer\Katalog.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Customer\\Katalog::$input', 'APPPATH\\Controllers\\Customer\\Katalog.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 16:52:12 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::postget()
+in APPPATH\Controllers\Customer\Katalog.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 16:57:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Customer\Katalog_model.php on line 31.
+ 1 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 17:04:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::or_like()
+in APPPATH\Models\Customer\Katalog_model.php on line 30.
+ 1 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 17:04:25 --> mysqli_sql_exception: Unknown column 'processor' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-11 17:04:25 --> Unknown column 'processor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = :nama_tipe:
+AND `sampul` = :sampul:
+AND `jumlah` != :jumlah:
+AND  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `seri` LIKE :seri: ESCAPE \'!\'
+OR  `processor` LIKE :processor: ESCAPE \'!\'
+OR  `ram` LIKE :ram: ESCAPE \'!\'
+OR  `penyimpanan` LIKE :penyimpanan: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 17:04:27 --> mysqli_sql_exception: Unknown column 'processor' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-11 17:04:27 --> Unknown column 'processor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = :nama_tipe:
+AND `sampul` = :sampul:
+AND `jumlah` != :jumlah:
+AND  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `seri` LIKE :seri: ESCAPE \'!\'
+OR  `processor` LIKE :processor: ESCAPE \'!\'
+OR  `ram` LIKE :ram: ESCAPE \'!\'
+OR  `penyimpanan` LIKE :penyimpanan: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 17:04:28 --> mysqli_sql_exception: Unknown column 'processor' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-11 17:04:28 --> Unknown column 'processor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = :nama_tipe:
+AND `sampul` = :sampul:
+AND `jumlah` != :jumlah:
+AND  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `seri` LIKE :seri: ESCAPE \'!\'
+OR  `processor` LIKE :processor: ESCAPE \'!\'
+OR  `ram` LIKE :ram: ESCAPE \'!\'
+OR  `penyimpanan` LIKE :penyimpanan: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 17:05:47 --> mysqli_sql_exception: Unknown column 'processor' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-11 17:05:47 --> Unknown column 'processor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `ram` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `penyimpanan` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = :nama_tipe:
+AND `sampul` = :sampul:
+AND `jumlah` != :jumlah:
+AND  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `seri` LIKE :seri: ESCAPE \'!\'
+OR  `processor` LIKE :processor: ESCAPE \'!\'
+OR  `ram` LIKE :ram: ESCAPE \'!\'
+OR  `penyimpanan` LIKE :penyimpanan: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 17:06:27 --> mysqli_sql_exception: Unknown column 'processor' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-11 17:06:27 --> Unknown column 'processor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `processor` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = :nama_tipe:
+AND `sampul` = :sampul:
+AND `jumlah` != :jumlah:
+AND  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `seri` LIKE :seri: ESCAPE \'!\'
+OR  `processor` LIKE :processor: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 17:06:32 --> mysqli_sql_exception: Unknown column 'procesor' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-11 17:06:32 --> Unknown column 'procesor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `procesor` LIKE \'%lenovo%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `procesor` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = \'bisnis\'
+AND `sampul` = 1
+AND `jumlah` != 0
+AND  `merk` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `seri` LIKE \'%lenovo%\' ESCAPE \'!\'
+OR  `procesor` LIKE \'%lenovo%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laptop`
+JOIN `multiple` ON `multiple`.`id_upload` = `laptop`.`id_upload`
+WHERE `nama_tipe` = :nama_tipe:
+AND `sampul` = :sampul:
+AND `jumlah` != :jumlah:
+AND  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `seri` LIKE :seri: ESCAPE \'!\'
+OR  `procesor` LIKE :procesor: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\Customer\Katalog_model.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Customer\Katalog.php(29): App\Models\Customer\Katalog_model->get_laptop_bisnis('bisnis', 'lenovo')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Katalog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Katalog))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 18:31:41 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\layout\template.php on line 273.
+ 1 APPPATH\Views\layout\template.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\layout\\template.php', 273, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 18:34:06 --> Call to undefined function auth()
+in APPPATH\Views\layout\template.php on line 296.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 18:34:50 --> Call to undefined function auth()
+in APPPATH\Views\layout\template.php on line 296.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 18:34:51 --> Call to undefined function auth()
+in APPPATH\Views\layout\template.php on line 296.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 18:41:29 --> Undefined variable: main_title
+in APPPATH\Views\layout\template.php on line 371.
+ 1 APPPATH\Views\layout\template.php(371): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: main_title', 'APPPATH\\Views\\layout\\template.php', 371, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin\Dashboard.php(25): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:05:42 --> Undefined property: App\Controllers\Admin\Customer::$db
+in APPPATH\Controllers\Admin\Customer.php on line 17.
+ 1 APPPATH\Controllers\Admin\Customer.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Admin\\Customer::$db', 'APPPATH\\Controllers\\Admin\\Customer.php', 17, [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:10:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::from()
+in APPPATH\Controllers\Admin\Customer.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:10:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::from()
+in APPPATH\Controllers\Admin\Customer.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:15:13 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\Admin\Customer.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-11 19:15:30 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(28): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:16:03 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:16:08 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:16:10 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:16:16 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:16:24 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:16:26 --> Undefined variable: user
+in APPPATH\Views\layout\template.php on line 296.
+ 1 APPPATH\Views\layout\template.php(296): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'APPPATH\\Views\\layout\\template.php', 296, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 6 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:23:58 --> syntax error, unexpected '++' (T_INC), expecting :: (T_PAAMAYIM_NEKUDOTAYIM)
+in APPPATH\Views\admin\data_customer.php on line 30.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/data_customer', [], true)
+ 3 APPPATH\Controllers\Admin\Customer.php(27): view('admin/data_customer', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Customer->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Customer))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 19:55:16 --> syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH\Controllers\Customer\Cart.php on line 56.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Customer\\Cart.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Customer\\cart')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Customer\\cart')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Customer\\cart')
+ 5 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Customer\\cart', true)
+ 6 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 20:34:32 --> Uncaught ErrorException: Array to string conversion in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Cart.php:40
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Cart.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 40, Array)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Cart->index()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Cart))
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 {main}
+  thrown
+in APPPATH\Controllers\Customer\Cart.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-01-11 20:34:53 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Cart.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Cart->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Cart))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-11 20:34:53 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `belum_rental`
+FROM `transaksi`
+WHERE `status_rental` = \'0\'
+AND `email` = \'sidik@mail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `belum_rental`
+FROM `transaksi`
+WHERE `status_rental` = \'0\'
+AND `email` = \'sidik@mail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `belum_rental`
+FROM `transaksi`
+WHERE `status_rental` = \'0\'
+AND `email` = \'sidik@mail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `belum_rental`
+FROM `transaksi`
+WHERE `status_rental` = :status_rental:
+AND `email` = :email:', [...], false)
+ 5 APPPATH\Controllers\Customer\Cart.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Cart->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Cart))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 20:36:08 --> Cannot use [] for reading
+in APPPATH\Views\customer\cart.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-11 20:51:53 --> Undefined variable: outes
+in APPPATH\Config\Routes.php on line 62.
+ 1 APPPATH\Config\Routes.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: outes', 'APPPATH\\Config\\Routes.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(787): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 20:52:02 --> Undefined variable: outes
+in APPPATH\Config\Routes.php on line 62.
+ 1 APPPATH\Config\Routes.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: outes', 'APPPATH\\Config\\Routes.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(787): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 20:52:03 --> Undefined variable: outes
+in APPPATH\Config\Routes.php on line 62.
+ 1 APPPATH\Config\Routes.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: outes', 'APPPATH\\Config\\Routes.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(787): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 20:52:14 --> Undefined variable: outes
+in APPPATH\Config\Routes.php on line 62.
+ 1 APPPATH\Config\Routes.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: outes', 'APPPATH\\Config\\Routes.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(787): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 20:52:35 --> Undefined variable: outes
+in APPPATH\Config\Routes.php on line 62.
+ 1 APPPATH\Config\Routes.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: outes', 'APPPATH\\Config\\Routes.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(787): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

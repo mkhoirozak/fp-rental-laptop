@@ -1,0 +1,196 @@
+CRITICAL - 2023-01-12 00:28:34 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:29:02 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:29:04 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:29:16 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:29:57 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:30:53 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:30:54 --> Invalid file: profile.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profile.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('profile', [], true)
+ 3 APPPATH\Controllers\Profile.php(28): view('profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:31:02 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:31:03 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:31:38 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:31:39 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:31:53 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:31:54 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:32:01 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:32:01 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:32:02 --> Undefined variable: q
+in APPPATH\Views\customer\profile.php on line 26.
+ 1 APPPATH\Views\customer\profile.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: q', 'APPPATH\\Views\\customer\\profile.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 00:32:45 --> Undefined variable: bisnis
+in APPPATH\Views\customer\profile.php on line 24.
+ 1 APPPATH\Views\customer\profile.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: bisnis', 'APPPATH\\Views\\customer\\profile.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/profile', [], true)
+ 5 APPPATH\Controllers\Profile.php(28): view('customer/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 01:39:14 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::hasOperator() must be of the type string, array given, called in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php on line 624
+in SYSTEMPATH\Database\BaseBuilder.php on line 2842.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(624): CodeIgniter\Database\BaseBuilder->hasOperator([...])
+ 2 APPPATH\Controllers\Admin\Transaksi.php(20): CodeIgniter\Database\BaseBuilder->join('`laptop` `l`', [...], 'LEFT ')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Transaksi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 01:39:35 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::hasOperator() must be of the type string, array given, called in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php on line 624
+in SYSTEMPATH\Database\BaseBuilder.php on line 2842.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(624): CodeIgniter\Database\BaseBuilder->hasOperator([...])
+ 2 APPPATH\Controllers\Admin\Transaksi.php(20): CodeIgniter\Database\BaseBuilder->join('`laptop` `l`', [...], 'LEFT ')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Transaksi->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 01:39:46 --> Array to string conversion
+in APPPATH\Controllers\Admin\Transaksi.php on line 23.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Admin\\Transaksi.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Transaksi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

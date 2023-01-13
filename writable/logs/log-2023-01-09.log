@@ -1,0 +1,1008 @@
+CRITICAL - 2023-01-09 09:54:23 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 222.
+ 1 SYSTEMPATH\CodeIgniter.php(222): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(182): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-01-09 03:06:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:06:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:06:14 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:06:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:06:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:06:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:06:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:06:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:07:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:07:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:07:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('admin')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('admin')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-09 03:07:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:', [...], false)
+ 3 APPPATH\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('admin')
+ 5 APPPATH\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:07:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:07:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:08:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:08:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:09:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 03:09:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:09:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3306, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 03:09:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:10:31 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 03:10:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:10:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 03:10:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:11:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 03:11:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:13:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', Array, Array)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate(Array, Array)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-09 03:13:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('sidik@mail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sidik@mail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Admin\Auth.php(137): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->menu_register()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:15:38 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`c...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(NULL)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-09 03:15:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`customer`) AS `numrows`
+FROM `transaksi`
+WHERE `customer` IS NULL', [], false)
+ 3 APPPATH\Models\Customer\Transaksi_model.php(47): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Customer\Dashboard.php(30): App\Models\Customer\Transaksi_model->numrows_cart(null)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:15:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-09 03:15:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:', [...], false)
+ 3 APPPATH\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+ 5 APPPATH\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:17:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-09 03:17:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:', [...], false)
+ 3 APPPATH\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+ 5 APPPATH\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-09 03:17:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'rental_laptop', 3307, '', 0)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+#5 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\app\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+#6 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+#7 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#8 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\freelance\rental-laptop\CodeIgniter4\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-01-09 03:17:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email` = :email:', [...], false)
+ 3 APPPATH\Models\Admin\Auth_model.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH\Controllers\Admin\Auth.php(48): App\Models\Admin\Auth_model->get_user('root')
+ 5 APPPATH\Controllers\Admin\Auth.php(37): App\Controllers\Admin\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 03:17:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-09 05:27:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:33:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:33:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:34:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:34:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:35:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:35:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:36:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 05:36:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\template_customer.php on line 69.
+ 1 APPPATH\Views\layout\template_customer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\template_customer.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template_customer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template_customer', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('customer/dashboard', [], true)
+ 6 APPPATH\Controllers\Customer\Dashboard.php(35): view('customer/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Customer\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
